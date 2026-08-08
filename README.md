@@ -54,8 +54,7 @@ and reordering the POIs does not change the output.
 Action index *k* means a different place in every episode, so the agent cannot memorise "action 12
 is the park". It is forced to read the POI features. This is adversarial to an MLP (which has to
 relearn the meaning of each slot position) and free for attention, which is permutation-invariant
-by construction. The MLP baseline was tried first and was measurably worse. See
-[docs/design-notes.md](docs/design-notes.md).
+by construction. The MLP baseline was tried first and was measurably worse. 
 
 **3. Generalisation is the metric, not training performance.**
 The agent trains on 5 European cities with **error-weighted city sampling** (an exponential moving
@@ -189,7 +188,7 @@ report/           project report (PDF)
 
 ## Things that were tried and dropped
 
-Documented in full in [`docs/design-notes.md`](docs/design-notes.md) and the
+Documented in full in the
 [report](report/Reinforcement_Learning.pdf):
 
 - **k-means POI selection**,clean in theory, but spreads points uniformly across the map. What
