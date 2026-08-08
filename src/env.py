@@ -25,8 +25,8 @@ _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if _ROOT not in sys.path:
     sys.path.insert(0, _ROOT)
 
-from walking_loops.graph_utils import get_or_create_graph
-from walking_loops.config import EnvConfig
+from graph_utils import get_or_create_graph
+from config import EnvConfig
 
 
 class WalkingEnvV2(gym.Env):

@@ -39,7 +39,7 @@ from stable_baselines3.common.type_aliases import Schedule
 from sb3_contrib.common.maskable.policies import MaskableActorCriticPolicy
 from sb3_contrib.common.maskable.distributions import MaskableDistribution
 
-from walking_loops.config import PolicyConfig
+from config import PolicyConfig
 
 
 def _autocast_ctx(enabled: bool, device_is_cuda: bool):

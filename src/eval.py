@@ -22,10 +22,10 @@ _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if _ROOT not in sys.path:
     sys.path.insert(0, _ROOT)
 
-from walking_loops.metrics import compute_loop_metrics, make_deterministic_test_set, EVAL_CITIES
-from walking_loops.config import Config, EnvConfig
-from walking_loops.env import WalkingEnvV2
-from walking_loops.policy import WalkingAttentionPolicy, PolicyConfig
+from metrics import compute_loop_metrics, make_deterministic_test_set, EVAL_CITIES
+from config import Config, EnvConfig
+from env import WalkingEnvV2
+from policy import WalkingAttentionPolicy, PolicyConfig
 
 # ---------------------------------------------------------------------------
 # Configuration

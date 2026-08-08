@@ -40,9 +40,9 @@ _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if _ROOT not in sys.path:
     sys.path.insert(0, _ROOT)
 
-from walking_loops.config import Config, EnvConfig, TrainConfig
-from walking_loops.env import WalkingEnvV2
-from walking_loops.policy import WalkingAttentionPolicy, PolicyConfig
+from config import Config, EnvConfig, TrainConfig
+from env import WalkingEnvV2
+from policy import WalkingAttentionPolicy, PolicyConfig
 
 
 # ---------------------------------------------------------------------------

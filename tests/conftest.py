@@ -74,8 +74,8 @@ def city_data_v2(grid_graph):
 
 @pytest.fixture()
 def mock_env_v2(city_data_v2):
-    from walking_loops.env import WalkingEnvV2
-    from walking_loops.config import EnvConfig
+    from env import WalkingEnvV2
+    from config import EnvConfig
 
     cfg = EnvConfig(num_pois=len(city_data_v2["pois"]), radius_meters=1000)
     G = city_data_v2["G"]
