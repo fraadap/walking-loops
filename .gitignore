@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Testing / tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Project artefacts
+cache/                  # OSMnx graphs + precomputed Dijkstra paths (regenerated on demand)
+models/*.zip            # trained checkpoints (large binaries)
+tensorboard_logs/
+results/
+optuna_studies/
+*.pkl
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

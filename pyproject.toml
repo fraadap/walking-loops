@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "walking-loops"
+version = "2.0.0"
+description = "Attention-based PPO agent that generates circular walking routes on real city maps"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Francesco D'Aprile" }]
+dependencies = [
+    "gymnasium",
+    "stable-baselines3",
+    "sb3-contrib",
+    "torch",
+    "osmnx",
+    "networkx",
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
